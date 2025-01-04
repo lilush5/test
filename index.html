@@ -21,8 +21,8 @@
             transform: translate(-50%, -50%);
         }
         .icon {
-            width: 100px; 
-            height: 100px; 
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             margin: 10px;
         }
@@ -46,6 +46,30 @@
             border: none;
             cursor: pointer;
             font-family: 'Courier New', Courier, monospace;
+        }
+        @media (max-width: 768px) {
+            body {
+                background-size: contain; /* Adjust background size for mobile */
+            }
+            .container {
+                top: 70%;
+                width: 80%; /* Adjust width for mobile screens */
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .icon {
+                width: 80px;
+                height: 80px;
+                margin: 5px;
+            }
+            .website-link-container {
+                top: 85%;
+                width: 50%; /* Adjust width for mobile screens */
+            }
+            .website-link {
+                font-size: 16px;
+                padding: 15px 20px;
+            }
         }
     </style>
 </head>
