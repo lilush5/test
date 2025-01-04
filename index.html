@@ -53,21 +53,17 @@
             cursor: pointer;
             font-family: 'Courier New', Courier, monospace;
         }
-        /* ביטול שינויים ספציפיים למובייל */
         @media (max-width: 768px) {
             body {
-                background-size: 60%; /* אותו גודל כמו בדסקטופ */
+                background-size: 75%; /* הגדלת הרקע במובייל */
             }
             .container {
-                top: 67%; /* אותו מיקום כמו בדסקטופ */
+                top: 70%;
+                gap: 5px; /* מרווח קטן יותר בין האייקונים במובייל */
             }
             .icon {
-                width: 100px; /* אותו גודל כמו בדסקטופ */
-                height: 100px;
-            }
-            .website-link-container {
-                top: 81%; /* אותו מיקום כמו בדסקטופ */
-                width: 25%; /* אותו רוחב כמו בדסקטופ */
+                width: 55px; /* הקטנת האייקונים במובייל */
+                height: 55px;
             }
         }
     </style>
