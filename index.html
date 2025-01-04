@@ -2,10 +2,11 @@
 <html>
 <head>
     <title>אוראל לוי אילוף כלבים</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             background-image: url('https://i.postimg.cc/YqndNYj7/Whats-App-Image-2025-01-04-at-17-38-07.jpg');
-            background-size: 60%; /* Adjust the size to 60% */
+            background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
@@ -38,13 +39,30 @@
         }
         .website-link {
             display: block;
-            text-decoration: none;
+            text-decoration: underline; /* Underline text to mimic link */
             font-size: 0; /* Hide the text */
             background-color: transparent; /* No background for link */
             padding: 10px; /* Padding for clickable area */
             border: none; /* No border */
             cursor: pointer; /* Mouse pointer cursor */
             font-family: 'Courier New', Courier, monospace; /* Monospaced font */
+        }
+        @media (max-width: 768px) {
+            body {
+                background-size: contain; /* Adjust background size for mobile */
+            }
+            .container, .website-link-container {
+                top: 70%; /* Adjust top value for mobile screens */
+                width: 80%; /* Adjust width for mobile screens */
+            }
+            .icon {
+                width: 80px; /* Smaller icons for mobile */
+                height: 80px;
+            }
+            .website-link {
+                font-size: 16px; /* Adjust text size for mobile */
+                padding: 15px 20px; /* Adjust padding for mobile */
+            }
         }
     </style>
 </head>
